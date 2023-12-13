@@ -182,10 +182,10 @@ func installCert(device string, path string, name string) error {
 	if b {
 		return nil
 	}
-	if err := remount(device); err != nil {
+	if err := root(device); err != nil {
 		return err
 	}
-	if err := root(device); err != nil {
+	if err := remount(device); err != nil {
 		return err
 	}
 	return push(device, path, name)
