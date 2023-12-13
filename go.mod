@@ -1,3 +1,3 @@
-module installsyscert
+module github.com/ClarkGuan/installsyscert
 
-go 1.21
+go 1.10
